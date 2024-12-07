@@ -45,6 +45,7 @@ Variabel-variabel pada  dataset adalah sebagai berikut:
 - URL  : URL Goodreads untuk halaman detail buku
 
 Berikut ilustrasi informasi dari  dataset yang digunakan:
+![Informasi dataset](https://raw.githubusercontent.com/Desumawijaya/ASSET_DICODING/main/IMAGES/Screenshot%202024-11-18%20052928.png)
 
 
 ## Data Preparation
