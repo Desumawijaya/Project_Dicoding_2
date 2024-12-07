@@ -2,13 +2,7 @@
 
 ## Project Overview
 
-Latar belakang pembuatan sistem rekomendasi ini berfokus pada perbandingan antara dua pendekatan berbeda untuk memberikan saran buku, yaitu CountVectorizer + Cosine Similarity dan TF-IDF + Cosine Similarity. Data yang digunakan dalam sistem ini terdiri dari 10.000 buku yang paling direkomendasikan sepanjang waktu, yang dikumpulkan sebagai bagian dari upaya pribadi untuk menemukan buku-buku yang mungkin disukai seseorang berdasarkan buku yang telah dibaca sebelumnya. Tujuan utama dari sistem ini adalah untuk meningkatkan pengalaman rekomendasi, serupa dengan dataset film dan acara yang digunakan dalam proyek analisis silang konten dan rekomendasi. Dengan membandingkan kedua teknik, diharapkan dapat ditemukan metode yang lebih akurat dalam memberikan rekomendasi buku yang relevan
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Jelaskan mengapa proyek ini penting untuk diselesaikan.
-- Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
-  
-  Format Referensi: [Judul Referensi](https://scholar.google.com/) 
+Sistem  rekomendasi  merupakan  solusi  yang  efektif  untuk  membantu  pengguna  menemukan buku yang sesuai dengan preferensi mereka [SISTEM REKOMENDASI BUKU DENGANMETODEK-NEAREST NEIGHBOR(K-NN)PADA GRAMEDIA](https://journal.unilak.ac.id/index.php/zn/article/view/12203/4667). Sistem rekomendasi memberikan berbagai keuntungan bagi pengguna dalam menemukan buku yang sesuai dengan preferensi mereka. Dengan fitur ini, pengguna tidak perlu mencari secara manual, sehingga waktu dan tenaga dapat dihemat secara signifikan. Selain itu, rekomendasi yang dihasilkan bersifat personal, karena didasarkan pada minat dan kebutuhan pengguna, menjadikan pengalaman mereka lebih menyenangkan. Tak hanya itu, sistem ini juga membantu pengguna mengeksplorasi berbagai pilihan buku baru yang relevan dan menarik.Pembuatan sistem rekomendasi ini berfokus pada perbandingan antara dua pendekatan berbeda untuk memberikan saran buku, yaitu CountVectorizer dan Cosine Similarity serta TF-IDF dan Cosine Similarity. Data yang digunakan dalam sistem ini terdiri dari 10.000 buku yang paling direkomendasikan sepanjang waktu, yang dikumpulkan sebagai bagian dari upaya pribadi untuk menemukan buku-buku yang mungkin disukai seseorang berdasarkan buku yang telah dibaca sebelumnya. Tujuan utama dari sistem ini adalah untuk meningkatkan pengalaman rekomendasi. Dengan membandingkan kedua teknik, diharapkan dapat ditemukan metode yang lebih akurat dalam memberikan rekomendasi buku yang relevan
 
 ## Business Understanding
 
