@@ -12,16 +12,16 @@ Bagian laporan ini mencakup:
 ### Problem Statements
 
 Menjelaskan pernyataan masalah:
-- Bagaimana implementasi sistem rekomendasi dengan metode CountVectorizer dan Cosine Similarity serta TF-IDF dan Cosine Similarity.  untuk dataset buku.
-- Bagimana hasil implementasi sistem rekomendasi dengan metode CountVectorizer dan Cosine Similarity serta TF-IDF dan Cosine Similarity untuk dataset buku
-- Bagaimana hasil perbandingan kedua metode, metode mana yang unggul.
+- Bagaimana implementasi sistem rekomendasi dengan metode CountVectorizer dan Cosine Similarity serta TF-IDF dan Cosine Similarity.  untuk dataset buku?
+- Bagimana hasil implementasi sistem rekomendasi dengan metode CountVectorizer dan Cosine Similarity serta TF-IDF dan Cosine Similarity untuk dataset buku?
+- Bagaimana hasil perbandingan kedua metode, metode mana yang unggul?
 
 ### Goals
 
 Menjelaskan tujuan proyek yang menjawab pernyataan masalah:
-- Untuk mengetahui bagaimana implementasi sistem rekomendasi dengan metode CountVectorizer dan Cosine Similarity serta TF-IDF dan Cosine Similarity.  untuk dataset buku.
-- Untuk mengetahui bagimana hasil implementasi sistem rekomendasi dengan metode CountVectorizer dan Cosine Similarity serta TF-IDF dan Cosine Similarity untuk dataset buku
-- Untuk mengetahui bagaimana hasil perbandingan kedua metode, metode mana yang unggul.
+- Untuk mengetahui  implementasi sistem rekomendasi dengan metode CountVectorizer dan Cosine Similarity serta TF-IDF dan Cosine Similarity.  untuk dataset buku.
+- Untuk mengetahui  hasil implementasi sistem rekomendasi dengan metode CountVectorizer dan Cosine Similarity serta TF-IDF dan Cosine Similarity untuk dataset buku
+- Untuk mengetahui  hasil perbandingan kedua metode, metode mana yang unggul.
 
 
 
@@ -45,7 +45,27 @@ Variabel-variabel pada  dataset adalah sebagai berikut:
 - URL  : URL Goodreads untuk halaman detail buku
 
 Berikut ilustrasi informasi dari  dataset yang digunakan:
-![Informasi dataset](https://raw.githubusercontent.com/Desumawijaya/ASSET_DICODING/main/IMAGES/Screenshot%202024-11-18%20052928.png)
+
+![Informasi dataset](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-07%20110935.png)
+
+Pada Dataset terdiri atas 8 kolum dengan jumlah data 10.000 data, namun  terdapat 1 kolom yang memiliki kurang dari 10.000 data yaitu pada kolom Description yang menandakan adanya missing values.
+
+Saya melakukan pengecekan jumlah missing values dan berikut hasilnya:
+
+![Missing Values](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-07%20110935.png)
+Dari gambar di atas terlihat kolom Description memiliki missing values sebanyak 77 data.
+
+Saya melakukan pengecekan 10 besar penulis dengan buku terbanyak dan visualisai nya sebagai berikut.
+
+![Top 10 Autors](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-07%20110935.png)
+Dari gambar di atas saya memdapatkan informasi terkait 10 besar nama penulis dengan jumlah buku terbanyak.
+
+Saya melakukan visualisasi untuk melihat data nama buku terpanjang, sebagai berikut.
+![Top 10 Autors](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-07%20110935.png)
+
+Saya melakukan visualisasi Kata-kata yang paling banyak muncul dalam deskripsi buku sebagai berikut.
+![Top 10 Autors](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-07%20110935.png)
+
 
 
 ## Data Preparation
