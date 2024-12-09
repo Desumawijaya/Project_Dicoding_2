@@ -108,7 +108,7 @@ Untuk menyederhanakan deskripsi saya menghilangkan kata-kata yang kurang penting
 
 6. Feature Extraction
 
-Feature extraction dengan TF-IDF dan CountVectorizer adalah bagian dari tahap data preparation, lebih tepatnya disebut vectorization, yang bertujuan mengubah data teks menjadi representasi numerik yang dapat digunakan oleh algoritma pemrosesan atau pembelajaran mesin. CountVectorizer bekerja dengan menghitung jumlah kemunculan kata (word count) dalam dokumen, sedangkan TF-IDF (Term Frequency-Inverse Document Frequency) memberikan bobot pada kata berdasarkan frekuensi kemunculannya di suatu dokumen relatif terhadap dokumen lain. Kedua metode ini sangat penting untuk merepresentasikan teks sebagai vektor numerik, memungkinkan perhitungan kesamaan cosine similarity dan analisis lebih lanjut untuk rekomendasi.
+Feature extraction dengan TF-IDF dan CountVectorizer bertujuan mengubah data teks menjadi representasi numerik yang dapat digunakan oleh algoritma pemrosesan atau pembelajaran mesin. CountVectorizer bekerja dengan menghitung jumlah kemunculan kata (word count) dalam dokumen, sedangkan TF-IDF (Term Frequency-Inverse Document Frequency) memberikan bobot pada kata berdasarkan frekuensi kemunculannya di suatu dokumen relatif terhadap dokumen lain. Kedua metode ini sangat penting untuk merepresentasikan teks sebagai vektor numerik, memungkinkan perhitungan kesamaan cosine similarity dan analisis lebih lanjut untuk rekomendasi.
 
 6.1 CountVectorizer
    
@@ -154,12 +154,12 @@ $$
 - Metode CountVectorizer dan Cosine Similarity
 Model rekomendasi menggunakan CountVectorizer dan Cosine Similarity bekerja dengan cara mengubah deskripsi teks buku menjadi representasi numerik berdasarkan frekuensi kata yang muncul di dalam teks menggunakan CountVectorizer. Selanjutnya, Cosine Similarity digunakan untuk mengukur kesamaan antara buku yang satu dengan buku lainnya berdasarkan vektor yang dihasilkan. Model ini akan memberikan rekomendasi buku-buku yang memiliki kesamaan tertinggi dengan buku yang dipilih, memungkinkan sistem untuk merekomendasikan buku serupa berdasarkan deskripsi teksnya. Metode ini efektif dalam menangkap hubungan antar buku yang berbagi kata-kata atau tema yang serupa.
   
-![CountVectorizer](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-07%20134606.png)
+![CountVectorizer](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-09%20121737.png)
 
 - Metode TF-IDF dan Cosine Similarity.
 Dalam sistem rekomendasi, TF-IDF pertama-tama mengubah deskripsi buku menjadi vektor numerik, yang kemudian digunakan untuk menghitung Cosine Similarity antara buku yang sedang dianalisis dan buku-buku lainnya. Nilai cosine similarity ini menunjukkan seberapa mirip dua buku, yang digunakan untuk memberikan rekomendasi buku serupa kepada pengguna.
   
-![TF-IDF](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-07%20134638.png)
+![TF-IDF](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-09%20121749.png)
 
 - Penjelasan perbandingan kedua metode:
 Perpaduan CountVectorizer dan Cosine Similarity, serta TF-IDF dan Cosine Similarity digunakan untuk mengubah teks menjadi vektor numerik, yang kemudian diukur kesamaannya menggunakan Cosine Similarity. CountVectorizer mengubah teks menjadi vektor berdasarkan frekuensi kata, sementara TF-IDF memberikan bobot lebih pada kata yang jarang muncul namun penting dalam dokumen. Kombinasi CountVectorizer dan Cosine Similarity cocok untuk teks dengan frekuensi kata sederhana, sedangkan TF-IDF dan Cosine Similarity lebih efektif untuk menilai pentingnya kata-kata dalam konteks yang lebih spesifik. Keduanya menghasilkan vektor yang digunakan untuk mengukur kesamaan antar dokumen, dengan Cosine Similarity menghitung seberapa mirip dua vektor tersebut.
@@ -194,6 +194,6 @@ $$
 
 Visualisasi hasil evaluasi:
 
-![Hasil Evaluasi](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-07%20140739.png)
+![Hasil Evaluasi](https://raw.githubusercontent.com/Desumawijaya/Project_Dicoding_2/main/images/Screenshot%202024-12-09%20121815.png)
 
 Hasil evaluasi menunjukkan bahwa kedua model, TF-IDF + Cosine Similarity dan CountVectorizer + Cosine Similarity, memiliki recall sempurna (1.0000), yang berarti keduanya mampu merekomendasikan semua item relevan tanpa ada yang terlewat. Namun, dari segi precision, model CountVectorizer sedikit lebih unggul dengan nilai 0.6655 dibandingkan TF-IDF yang memiliki precision 0.6499. Hal ini menunjukkan bahwa rekomendasi dari CountVectorizer lebih akurat dalam memberikan item relevan dibandingkan TF-IDF. Secara keseluruhan, kedua model memiliki performa yang baik, dengan kelebihan masing-masing.
